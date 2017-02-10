@@ -1,0 +1,32 @@
+<div class="sidebar inner">
+    <div class="sb_nav">
+        <h3 class='title'>{$Think.lang.T_NEWS}</h3>
+        <div class="active" id="sidebar" data-csnow="42" data-class3="0" data-jsok="2">
+            <cat type="n">
+                <dl class="list-none navnow"><dt id='part{$cid}'><a href='{:U("news/index",array("cid"=>$cid))}'  title='{$name}' class="zm"><span>{$name}</span></a></dt></dl>
+            </cat>
+            <div class="clear"></div></div>
+    </div>
+    <div class="sb_box" >
+        <h3 class="title">
+            <div class="position" id="ny_navx">{$Think.lang.T_POSSTION}：<a href="{:U('index/index')}" title="{$Think.lang.T_HOME}">{$Think.lang.T_HOME}</a> &gt; <a href="{:U('news/index')}" >{$Think.lang.T_NEWS}</a>&gt; <a href="" >{$Think.lang.T_NEWS_CONTENT}</a></div>
+
+        </h3>
+        <div class="clear"></div>
+
+        <div class="editor active" id="showtext">
+            <h1 style="text-align: center; font-size: 14px;">{$info.title}</h1>
+<div style="text-align: center">{$Think.lang.T_AUTHER}：{$auther}&nbsp;&nbsp;&nbsp;&nbsp;{$Think.lang.T_ADDTIME}：{:date('Y-m-d',$info['published'])}&nbsp;&nbsp;&nbsp;&nbsp;{$Think.lang.T_VIEWTIMES}：{$info['click']}</div>
+<div style="border: 1px #c0c0c0 dotted; padding: 5px; background:#ffffdd; margin-bottom: 15px; ">
+{:msubstr($info['summary'],0,100)}
+</div>
+<div>
+{$info['content']}
+</div>
+
+
+<div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

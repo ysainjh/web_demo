@@ -1,0 +1,31 @@
+<div class="sidebar inner">
+    <include file="Common:ad" />
+    <div class="sb_nav">
+        <h3 class='title'>{$Think.lang.T_NEWS}</h3>
+        <div class="active" id="sidebar" data-csnow="43" data-class3="0" data-jsok="2">
+            <cat type="n">
+            <dl class="list-none navnow">
+                <dt id='part{$cid}'><a href='{:U("news/index",array("cid"=>$cid))}'  title='{$name}' class="zm"><span>{$name}</span></a></dt>
+
+            </dl>
+            </cat>
+                <div class="clear"></div></div>
+    </div>
+    <div class="sb_box" style="min-height: 550px;" >
+        <h3 class="title">
+            <div class="position" id="ny_navx">{$Think.lang.T_POSSTION}：<a href="{:U('index/index')}" title="{$Think.lang.T_HOME}">{$Think.lang.T_HOME}</a> &gt; <a href='{:U("news/index")}' >{$Think.lang.T_NEWS}</a></div>
+            <span>{$Think.lang.T_NEWS}</span>
+        </h3>
+        <div class="clear"></div>
+        <div class="active" id="newslist">
+            <ul class='list-none metlist'>
+                <volist name="list" id="vo">
+                <li class='list top'><span>[{:date('Y/m/d',$vo['published'])}][{$Think.lang.T_VIEWTIMES}:{$vo.click}]</span><a href="{:U('news/read',array('id'=>$vo['id']))}" title='{$vo.title}' target='_self'>{:msubstr($vo['title'],0,35,'utf-8',false)}</a><p>{:msubstr($vo['summary'],0,100)}</p></li>
+            </volist>
+            </ul>
+            <div id="flip"><style>.digg4  { padding:3px; margin:3px; text-align:center; font-family:Tahoma, Arial, Helvetica, Sans-serif;  font-size: 12px;}.digg4  a { border:1px solid #ddd; padding:2px 5px 2px 5px; margin:2px; color:#aaa; text-decoration:none;}.digg4  a:hover { border:1px solid #a0a0a0; }.digg4  a:hover { border:1px solid #a0a0a0; }.digg4  span.current {border:1px solid #e0e0e0; padding:2px 5px 2px 5px; margin:2px; color:#aaa; background-color:#f0f0f0; text-decoration:none;}.digg4  span.disabled { border:1px solid #f3f3f3; padding:2px 5px 2px 5px; margin:2px; color:#ccc;} </style>
+                <div class='digg4'>{$page}</div></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

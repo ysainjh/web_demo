@@ -1,0 +1,74 @@
+<div class="Zbannar">
+    <div id="flash8box" class="a1">
+        <div id="anim">
+            <div id="marquee">
+                <ul id="slides" class="list-none">
+                    <volist name="ad_info" id="vo">
+                    <li style="background:url('__UPLOAD__/pictures/{$vo.ad_img}') no-repeat center top"><a href="{$vo.ad_link}" target="_blank">{$vo.ad_name}</a></li>
+                    </volist>
+                </ul>
+                <ul id="circle" class="list-none"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="indx-pro">
+    <div class="inner">
+        <h3 class="title"><span>{$Think.lang.T_PRODUCT}</span></h3>
+        <div class="clear">
+            <div class="profld" data-listnum="">
+                <product  limit="3"  where="is_recommend=1" order="id DESC" >
+                <dl class="dl-jqrun">
+                    <dt><img src="__UPLOAD__/product/{$pro.image}" alt="Jewelry" title="Jewelry" width="92" height="108"/></dt>
+                    <dd>
+                        <div class="mp">
+                            <h2><a href="{:U('product/read',array('id'=>$pro['id']))}" title="{$pro.title}">{$pro.title}</a></h2>
+                            <h3><a href="{:U('product/read',array('id'=>$pro['id']))}" title=""></a></h3>
+                            <p><a href="{:U('product/read',array('id'=>$pro['id']))}" title="{$pro.summary}">{:msubstr($pro['summary'],0,60)}</a></p>
+                        </div>
+                    </dd>
+                </dl>
+                </product>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="doly-abo">
+    <div class="inner">
+        <div class="fl Newxx">
+            <h3 class="title"><a href="{:U('news/index')}" title="MetInfo CMS" class="More">{$Think.lang.T_MORE}>></a><span>{$Think.lang.T_NEWS}</span></h3>
+            <div class="news">
+                <ul class="list-none">
+                    <news  limit="3"  where="is_recommend=1" order="id DESC" >
+                    <li>
+                        <h2><span><i>{:date('Y/m/d',$new['published'])}</i></span><a href="{:U('news/read',array('id'=>$new['id']))}" title="{$new.title}">{$new.title}</a></h2>
+                        <p title="{$new.summary}">{:msubstr($new['summary'],0,45)}</p>
+                    </li>
+                    </news>
+                </ul>
+            </div>
+        </div>
+        <div class="fr Aboutz">
+            <h3 class="title"><span>{$Think.lang.T_ABOUT_US}</span></h3>
+            <div class="editor2"><weblock name="aboutus" /><div class="clear"></div></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="cotac-lk">
+    <div class="inner">
+        <div class="fl contact editor2"><p><a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=d58a5cb1a5297cd53db318b24cf5de264a68c7869f29c7c659b86d6ad80debca"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Conist php技术交流群" title="Conist php技术交流群"></a></p><div>E-mail:lysily1314@gmail.com</div><div class="clear"></div></div>
+        <div class="fr index-Link">
+            <h3>{$Think.lang.T_LINKS}:</h3>
+            <div class="linklist">
+                <div class="textlk"><ul>
+                    <flink limit="5" order="sort DESC">
+                    <li><a href='{$link}' <if condition="$target eq 2">target='_blank'</if> title='{$title}'>{$title}</a></li>
+                    </flink>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
