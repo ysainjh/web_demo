@@ -1,14 +1,3 @@
-# -----------------------------------------------------------
-# PHP-Amateur database backup files
-# Blog: http://blog.51edm.org
-# Type: 系统自动备份
-# Description:当前SQL文件包含了表：co_access、co_ad、co_admin、co_category、co_link、co_member、co_message、co_nav、co_news、co_node、co_page、co_product、co_role、co_role_user、co_tag的结构信息，表：co_access、co_ad、co_admin、co_category、co_link、co_member、co_message、co_nav、co_news、co_node、co_page、co_product、co_role、co_role_user、co_tag的数据
-# Time: 2014-05-08 13:28:50
-# -----------------------------------------------------------
-# 当前SQL卷标：#1
-# -----------------------------------------------------------
-
-
 # 数据库表：co_access 结构信息
 DROP TABLE IF EXISTS `co_access`;
 CREATE TABLE `co_access` (
@@ -316,15 +305,15 @@ INSERT INTO `co_access` VALUES ('4','52','3','46','');
 
 
 # 数据库表：co_ad 数据信息
-INSERT INTO `co_ad` VALUES ('6','图片1','http://www.conist.com/','201311/527bb0c2728a4.jpg','index','1','zh-en');
-INSERT INTO `co_ad` VALUES ('7','图片2','http://www.conist.com/','201311/527bb0d5ceda0.jpg','index','2','zh-en');
-INSERT INTO `co_ad` VALUES ('9','圣丹斯','http://www.conist.com/','201311/527c9f47bf378.jpg','index','0','zh-en');
-INSERT INTO `co_ad` VALUES ('11','广告1','http://www.conist.com/','201311/527d13d20bff4.jpg','index','10','zh-cn');
-INSERT INTO `co_ad` VALUES ('12','广告2','http://www.conist.com/','201311/527d13e5ade49.jpg','index','11','zh-cn');
-INSERT INTO `co_ad` VALUES ('15','全局1','http://www.conist.com/','201311/527d1587ddb98.jpg','all','0','zh-cn');
-INSERT INTO `co_ad` VALUES ('16','全局2','http://www.conist.com/','201311/527d15971446c.jpg','all','0','zh-cn');
-INSERT INTO `co_ad` VALUES ('17','全局3','http://www.conist.com/','201311/527d15a630135.jpg','all','0','zh-en');
-INSERT INTO `co_ad` VALUES ('18','手机','http://www.conist.com','201311/527f13755025a.jpg','wap','30','zh-cn');
+INSERT INTO `co_ad` VALUES ('6','图片1','http://www.baidu.com/','201311/527bb0c2728a4.jpg','index','1','zh-en');
+INSERT INTO `co_ad` VALUES ('7','图片2','http://www.baidu.com/','201311/527bb0d5ceda0.jpg','index','2','zh-en');
+INSERT INTO `co_ad` VALUES ('9','圣丹斯','http://www.baidu.com/','201311/527c9f47bf378.jpg','index','0','zh-en');
+INSERT INTO `co_ad` VALUES ('11','广告1','http://www.baidu.com/','201311/527d13d20bff4.jpg','index','10','zh-cn');
+INSERT INTO `co_ad` VALUES ('12','广告2','http://www.baidu.com/','201311/527d13e5ade49.jpg','index','11','zh-cn');
+INSERT INTO `co_ad` VALUES ('15','全局1','http://www.baidu.com/','201311/527d1587ddb98.jpg','all','0','zh-cn');
+INSERT INTO `co_ad` VALUES ('16','全局2','http://www.baidu.com/','201311/527d15971446c.jpg','all','0','zh-cn');
+INSERT INTO `co_ad` VALUES ('17','全局3','http://www.baidu.com/','201311/527d15a630135.jpg','all','0','zh-en');
+INSERT INTO `co_ad` VALUES ('18','手机','http://www.baidu.com','201311/527f13755025a.jpg','wap','30','zh-cn');
 
 
 # 数据库表：co_admin 数据信息
@@ -344,7 +333,7 @@ INSERT INTO `co_category` VALUES ('79','0','Network','p','zh-en');
 
 
 # 数据库表：co_link 数据信息
-INSERT INTO `co_link` VALUES ('1','Conist','1','http://www.conist.com','124','2');
+INSERT INTO `co_link` VALUES ('1','Conist','1','http://www.baidu.com','124','2');
 
 
 # 数据库表：co_member 数据信息

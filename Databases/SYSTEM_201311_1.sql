@@ -1,13 +1,3 @@
-# -----------------------------------------------------------
-# PHP-Amateur database backup files
-# Blog: http://blog.51edm.org
-# Type: 系统自动备份
-# Description:当前SQL文件包含了表：pa1_access、pa1_ad、pa1_admin、pa1_category、pa1_link、pa1_member、pa1_message、pa1_nav、pa1_news、pa1_node、pa1_page、pa1_product、pa1_role、pa1_role_user、pa1_tag的结构信息，表：pa1_access、pa1_ad、pa1_admin、pa1_category、pa1_link、pa1_member、pa1_message、pa1_nav、pa1_news、pa1_node、pa1_page、pa1_product、pa1_role、pa1_role_user、pa1_tag的数据
-# Time: 2013-11-10 23:58:24
-# -----------------------------------------------------------
-# 当前SQL卷标：#1
-# -----------------------------------------------------------
-
 
 # 数据库表：pa1_access 结构信息
 DROP TABLE IF EXISTS `pa1_access`;
@@ -328,7 +318,7 @@ INSERT INTO `pa1_ad` VALUES ('18','手机','http://www.2345.com','201311/527f137
 
 
 # 数据库表：pa1_admin 数据信息
-INSERT INTO `pa1_admin` VALUES ('1','超级管理员','lysily1314@gmail.com','d0c3d9b5b7ad7621590e4aa88cc6cad2','1','我是超级管理员 哈哈~~','','1384099075');
+INSERT INTO `pa1_admin` VALUES ('1','超级管理员','ysainjh@163.com','d0c3d9b5b7ad7621590e4aa88cc6cad2','1','我是超级管理员 哈哈~~','','');
 
 
 # 数据库表：pa1_category 数据信息
@@ -341,11 +331,6 @@ INSERT INTO `pa1_category` VALUES ('76','0','Company News','n','zh-en');
 INSERT INTO `pa1_category` VALUES ('77','0','Phone','p','zh-en');
 INSERT INTO `pa1_category` VALUES ('78','0','Display','p','zh-en');
 INSERT INTO `pa1_category` VALUES ('79','0','Network','p','zh-en');
-
-
-# 数据库表：pa1_link 数据信息
-INSERT INTO `pa1_link` VALUES ('1','Conist','1','http://www.conist.com','124','2');
-
 
 # 数据库表：pa1_member 数据信息
 
@@ -446,12 +431,3 @@ INSERT INTO `pa1_role_user` VALUES ('2','7');
 INSERT INTO `pa1_role_user` VALUES ('4','8');
 INSERT INTO `pa1_role_user` VALUES ('4','9');
 
-
-# 数据库表：pa1_tag 数据信息
-INSERT INTO `pa1_tag` VALUES ('6','关于我们','aboutus','《关于·我们》是歌手尚雯婕于2007年底推出的圣诞节日专辑。其以轻松欢快为基调打造出非同一般的节日气氛，更加贴合时下风潮。在曲风与节奏的变化没有给人带来陌生感的同时，拓宽了尚雯婕的音乐思路，清晰的旋律线条直观具象的表达着蕴藏在音乐中心的思想内涵。不仅仅拘泥于浪漫情节的文艺小调，利用多元化的表现手法在实现扩大音乐内容的同时挖掘音乐中更成层的含义。','zh-cn');
-INSERT INTO `pa1_tag` VALUES ('8','手机版首页欢迎语（中文）','wapindexwelcome','手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语手机版首页欢迎语','zh-cn');
-INSERT INTO `pa1_tag` VALUES ('9','手机版首页欢迎语（English）','wapindexwelcome','welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!<span>welcome to here!!</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>','zh-en');
-INSERT INTO `pa1_tag` VALUES ('10','手机版关于我们（中文）','wapaboutus','手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）手机版关于我们（中文）','zh-cn');
-INSERT INTO `pa1_tag` VALUES ('11','手机版关于我们（English）','wapaboutus','Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.','zh-en');
-INSERT INTO `pa1_tag` VALUES ('12','手机版联系我们（English）','wapcontactus','<span style="line-height:1.5;">Adress:guangdong guangzhou tianhe</span><br>Phone:123456789<br>Fax:12-11-245327<span>123456789<br></span> Mobile:123456789','zh-en');
-INSERT INTO `pa1_tag` VALUES ('13','手机版联系我们（中文）','wapcontactus','<span style="line-height:1.5;">地址:广东省广州市天河区&nbsp;</span><br>Phone:123456789&nbsp;<br>Fax:123456789&nbsp;<br>Mobile:123456789<br>','zh-cn');
